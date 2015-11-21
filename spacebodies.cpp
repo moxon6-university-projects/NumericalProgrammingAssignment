@@ -181,11 +181,11 @@ int main(int argc, char *argv[]){
     cout <<"Setup Type:" << argv[1] << "\nDebug: " << argv[2] << "\n";
 
 
-    if (argv[0] == "0"){setup_uniform();}
+    if (argv[1] == "0"){setup_uniform();}
     else {setup_uniform();}
 
     bool debug;
-    if (argv[1] == "0"){debug = false;}
+    if (argv[2] == "0"){debug = false;}
     else{
         debug = true;
         cout << "Debugging \n";
