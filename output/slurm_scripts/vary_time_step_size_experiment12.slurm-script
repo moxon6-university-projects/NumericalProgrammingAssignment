@@ -1,0 +1,11 @@
+#!/bin/csh
+#SBATCH -p test.q
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH -t 00:15:00
+#SBATCH --exclusive
+
+module purge
+module load intel/xe_2015.2
+
+../spacebodies 5 1 1000 0.01 0.01 5 1000 1000 100 vary_time_step_size_experiment12
